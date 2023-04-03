@@ -33,14 +33,126 @@ ol, ul {
 	list-style: none;
 }
 
+a{
+    text-decoration: none;
+}
+
+/* fine reset */
+
+:root {
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+  }
 
 
+.container{
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col{
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+header{
+    background-color: #0084fd;
+    padding: 16px 0px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* menu responsive */
+.container.responsive{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container.responsive div:first-child, .container.responsive div:nth-child(2){
+    width: 50%;
+}
+
+.container.responsive li{
+    margin: 16px 0px;
+}
+
+.menu-responsive-container {
+    width: 100%;
+    display: none;
+}
+
+.logo-container img{
+    max-width: 100px;
+
+}
+.burger-menu, .logo-container{
+    display: flex;
+    align-items: center;
+}
+
+.flex-end{
+    justify-content: end;
+}
+
+.burger-menu{
+    font-size: 24px;
+    color: #fff;
+}
+
+/* card */
+.card{
+    background-color: #b5ddff;
+    padding: 10vw;
+    border-radius: 24px;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #5b6e7f;
+    margin-top: 36px;
+    overflow: hidden;
+}
+
+.card h3{
+    font-size: 2em;
+    color: #0084fd;
+    margin-bottom: 1em;
+    font-weight: 900;
+}
+
+.card .btn{
+    display: inline-block;
+    margin: 24px 0px;
+    padding: 8px 64px;
+    border-radius: 64px;
+    background-color: #0084fd;
+    color: #fff;
+}
+
+.card .btn::before{
+    font-family: "Font Awesome 5 Brands"; content: "\f179";
+    margin-right: 8px;
+}
+
+.card i{
+    font-size: 4em;
+    margin-bottom: 0.3em;
+    display: block;
+    color: #0084fd;
+}
+
+.card img{
+    position: relative;
+    margin-bottom:-12vw;
+}
 
 
-
-
-
-
-
-
-/********* Debug *********/
