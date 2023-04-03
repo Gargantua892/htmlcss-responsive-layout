@@ -27,7 +27,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.5;
 }
 ol, ul {
 	list-style: none;
@@ -69,10 +69,36 @@ header{
     padding: 16px 0px;
 }
 
+h2{
+    font-size: 3em;
+    font-weight: 900;
+}
+
+h3{
+    font-size: 2em;
+    margin: 1em 0em;
+    font-weight: 900;
+}
+
+h4{
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
 .text-center{
     text-align: center;
 }
 
+.btn{
+    display: inline-block;
+    margin: 24px 0px;
+    padding: 0.5em 2.5em;
+    border-radius: 64px;
+    color: #fff;
+    letter-spacing: 0.1em;
+    text-transform: lowercase;
+}
 /* menu responsive */
 .container.responsive{
     display: flex;
@@ -112,8 +138,8 @@ header{
 
 
 
-section.demo{
-    padding: 10vw;
+section{
+    padding: 10vw 6vw;
 }
 /* card */
 .card{
@@ -127,23 +153,24 @@ section.demo{
     overflow: hidden;
 }
 
-.card h3{
+.demo .card h3{
     font-size: 2em;
     color: #0084fd;
     margin-bottom: 1em;
     font-weight: 900;
 }
 
-.card .btn{
+.demo .card .btn{
     display: inline-block;
     margin: 24px 0px;
     padding: 8px 64px;
     border-radius: 64px;
     background-color: #0084fd;
     color: #fff;
+    text-transform: capitalize;
 }
 
-.card .btn::before{
+.demo .card .btn::before{
     font-family: "Font Awesome 5 Brands"; content: "\f179";
     margin-right: 8px;
 }
@@ -176,7 +203,7 @@ section.planning h3{
     font-weight: 900;
 }
 
-section.planning .card{
+.white-bkg{
     background-color: #fff;
 }
 
@@ -206,3 +233,70 @@ section.planning .card .icon-container i{
     color: #000;
 }
 
+/* testimonials */
+
+section.testimonial .card{
+    background-color: #9792e3;
+    color: #fff;
+}
+
+section.testimonial .card h4{
+    font-size: 1.3em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 2em;
+}
+
+section.testimonial .img-container{
+    width: 10em;
+    height: 10em;
+    margin: 0px auto 24px auto;
+}
+
+.testimonial .img-container img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5em;
+}
+
+.testimonial blockquote{
+    position: relative;
+}
+
+.testimonial blockquote::before{
+    content: '“';
+    font-size: 5em;
+    position: absolute;
+    margin-right: 8px;
+    margin-left: -36px;
+    top: 24px;
+}
+
+.testimonial blockquote::after{
+    content: '”';
+    font-size: 5em;
+    position: absolute;
+    bottom: -20px;
+    margin-left: 8px;
+}
+
+/* benefit */
+
+.purple-bkg{
+    background-color: #9792e3;
+}
+
+.benefit h3{
+    color: #fff;
+}
+
+.card h2{
+    font-size: 3em;
+    font-weight: 900;
+    color: #9792e3;
+}
+
+.card h3{
+    color: #9792e3;
+}
