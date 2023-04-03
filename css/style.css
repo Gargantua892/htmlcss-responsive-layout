@@ -110,6 +110,11 @@ header{
     color: #fff;
 }
 
+
+
+section.demo{
+    padding: 10vw;
+}
 /* card */
 .card{
     background-color: #b5ddff;
@@ -150,9 +155,54 @@ header{
     color: #0084fd;
 }
 
-.card img{
+.demo .card img{
     position: relative;
     margin-bottom:-12vw;
 }
 
+/* sezione planning */
+
+section.planning{
+    background-color: #9792e3;
+    padding: 10vw;
+    line-height: 1.5em;
+    color: #fff;
+}
+
+section.planning h3{
+    font-size: 2em;
+    color: #fff;
+    margin: 1em 0em;
+    font-weight: 900;
+}
+
+section.planning .card{
+    background-color: #fff;
+}
+
+section.planning .card h3{
+   color: #000;
+}
+
+section.planning .card span{
+    font-style: italic;
+}
+
+section.planning .card .icon-container{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #9792e3;
+    margin: 24px auto 0px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.planning .card .icon-container i{
+    margin: 0px;
+    font-size: 1.8em;
+    color: #000;
+}
 
