@@ -26,6 +26,11 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+*{
+    box-sizing: border-box;
+}
+
 body {
 	line-height: 1.5;
 }
@@ -55,6 +60,7 @@ a{
 .row{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .col{
@@ -148,6 +154,7 @@ h4{
 section {
     padding: 10vw 6vw;
 }
+
 /* card */
 .card{
     background-color: #b5ddff;
@@ -415,4 +422,119 @@ footer .col{
 
 footer span{
     color: #9792e3;
+}
+
+
+
+
+/* ********************** 
+
+    Media queries
+
+********************** */
+
+
+
+/* ********************** 
+         Tablet
+********************** */
+
+
+@media screen and (min-width: 630px){
+
+    section {
+        padding: 6vw 2vw;
+    }
+
+/*  Sezione demo  */
+
+
+    .demo .row:last-child .col{
+        flex-basis: calc(100% / 3);
+    }
+
+    .demo .row:first-child .col:first-child{
+        flex-basis: calc((100% / 3) * 2 );
+    }
+
+    .demo .row:first-child .col:nth-child(2){
+        flex-basis: calc(100% /3);
+    }
+
+    .demo .col{
+        display: flex;
+    }
+
+    .demo .card{
+        margin-top: 0px;
+    }
+
+    .col{
+        padding: 1em;
+    }
+
+    .card{
+        padding: 24px;
+    }
+
+    .demo .row{
+        flex-wrap: nowrap;
+    }
+
+    section.planning{
+        padding: 6vw 0vw;
+    }
+
+
+
+
+/*  Sezione testimonial  */
+    section.testimonial .card{
+        display: flex;
+    }
+
+    section.testimonial .card div:first-child{
+        flex-basis: 30%;
+    }
+
+    section.testimonial .card div:last-child{
+        flex-basis: 70%;
+        text-align: left;
+    }
+    
+    .testimonial .card .img-container {
+       margin: 0 auto;
+    }
+
+    section.testimonial .card .text-container h4 {
+        margin-top: 8px;
+    }
+
+    section.testimonial .card .text-container {
+        padding: 10px 24px;
+    }
+
+    section.testimonial .card .text-container h4 {
+        margin-top: 16px;
+    }
+
+    /*  Sezione benefit  */
+
+    section.benefit .col{
+        width: 50%;
+    }
+
+    section.benefit .col:first-child{
+        width: 100%;
+    }
+
+    section.benefit .col .btn{
+       margin-bottom: 0px;
+    }
+
+    /*  Sezione benefit  */
+
+
+
+
 }
