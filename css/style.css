@@ -350,10 +350,11 @@ section.about .img-container{
 
 section.about h3{
     margin: 0px;
+    font-size: 2em;
 }
 
 section.about .btn{
-    padding: 0.5em 1em;
+    padding: 0.5em 0.8em;
 }
 
 section.about .btn::before{
@@ -533,6 +534,24 @@ footer span{
     }
 
     /*  Sezione benefit  */
+
+    section.about .col:first-child{
+        width: 60%;
+        line-height: 2.4em;
+    }
+
+    section.about .col:last-child{
+        width: 40%;
+    }
+
+    section.about .col:last-child .img-container{
+       margin-top: 0px;
+    }
+
+
+    section.about .col:last-child h3{
+       font-size: 1.3em;
+     }
 
 
 
